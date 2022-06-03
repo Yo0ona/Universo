@@ -1,3 +1,119 @@
-H1 {
-    text-align: center;
+/*Ajusta los margenes y lados en todos los elementos de html*/
+*{
+    margin: 0;
+    padding: 0;
 }
+
+/*Cuerpo*/
+body {
+    /*Tipo de letra o fuente*/
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #65C18C;
+}
+
+/*Regla para agregar una fuente de texto a nuestra hoja de estilo*/
+    @font-face {
+        /*Indicamos un nombre*/
+        font-family: go;
+        /*llamamos la fuente*/
+        src: url(../Fuentes/Bombing.ttf);
+        
+        }
+img {
+    width: 100%;
+}
+
+  
+/*titulo*/
+h1 {
+    text-align: center;
+    font-family: go; 
+    font-size: 80px;
+
+    /*Efecto para el fondo degradado*/
+    background: #00467F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+/*Barra de navegacion */
+.navegacion {
+    background: #00467F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-align: center;
+    
+    
+    
+}
+
+/*estilos de las etiquetas*/
+.navegacion a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+/*Efecto: cambia de color cuando pasas por el enlace*/
+.navegacion a:hover {
+    color: skyblue;
+}
+
+
+
+
+
+
+/*imagen de la tierra*/
+.galax {
+    justify-content: space-around;
+    background: #00467F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+display: flex;
+
+}
+
+.galax img{
+    width: 100px;;
+}
+
+/*portada*/
+header {
+
+    width:100%;
+    height: 800px;
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89253ea4, #3a6186), url(../Imagenes/TIERRA1.jpg);   
+    background: linear-gradient(to right, #89253e38, #3a6186), url(../Imagenes/TIERRA1.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+   
+}
+
+/*efecto de la portada*/
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.wave1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  
+    
+    
+
+}
+
